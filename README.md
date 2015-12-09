@@ -20,6 +20,30 @@ git push origin master
 ```
 You should now check that your new remote contains the project code.
 
+## Updating NodeJS
+
+Before developing your API you should ensure that Cloud9 is running the latest stable version of NodeJS (v5.2.0 at the time of writing) and set this as default.
+```
+nvm list-remote
+nvm install 5.2.0
+nvm alias default 5.2.0
+node -v
+```
+
+## Understanding the Code
+
+Lets take a look at the project files.
+
+Open the `.jshintrc` file. This is the configuration file for the _JSHint linter_ which checks your code for issues. There are a number of options listed.
+
+1. Make sure you understand the options by looking them up in the [JSHint Option Reference](http://jshint.com/docs/options/).
+
+The `package.json` file is the _metadata_ associated with the _NodeJS project_.
+
+1. Make sure you check the [documentation](https://docs.npmjs.com/files/package.json) so you understand the different fields.
+  - the `scripts` field contains a `start` field. This is the command the server will run to start the app
+  - the `engines` field contains a `node` field that specifies the version of node that will be installed on the remote server
+
 ## Installing and Configuring Heroku
 
 Once you have created your **Heroku** account and logged in you need to download and install the [Heroku Toolbelt](https://toolbelt.heroku.com). Once this is installed you need to **log in**.
