@@ -52,6 +52,10 @@ Finally you can deploy your app to the Heroku cloud by pushing to the heroku rem
 ```
 git push heroku master
 ```
+You can now view your API by visiting the supplied url.
+```
+https://project-name.herokuapp.com/
+```
 
 ## Running the API through Cloud9
 
