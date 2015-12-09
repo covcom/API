@@ -48,15 +48,6 @@ git remote -v
 ```
 You can also set the new remote using `heroku git:remote -a project-name`
 
-Finally you can deploy your app to the Heroku cloud by pushing to the heroku remote.
-```
-git push heroku master
-```
-You can now view your API by visiting the supplied url.
-```
-https://project-name.herokuapp.com/
-```
-
 ## Running the API through Cloud9
 
 During the development process you should always run your API through the Cloud9 IDE and only deploy to Heroku when you have a working version.
@@ -65,3 +56,11 @@ Open the index.js file in the Cloud9 editor. Now click on the **Play** button in
 
 ## Deploying to Heroku
 
+You can deploy your app to the Heroku cloud by pushing to the heroku remote.
+```
+git push heroku master
+```
+You can now view your API by visiting the supplied url.
+```
+https://project-name.herokuapp.com/
+```
