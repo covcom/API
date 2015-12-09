@@ -12,11 +12,11 @@ server.get('/', function(req, res) {
   res.end()
 })
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8080
 server.listen(port, function (err) {
   if (err) {
-      console.error(err);
+      console.error(err)
   } else {
-    console.log('App is ready at : ' + port);
+    console.log('App is ready at : ' + port)
   }
 })
